@@ -41,3 +41,4 @@ music-player
 - Toggle the theme by clicking the "Toggle Theme" button.
 
 Enjoy your music!
+docs available at https://music-player.hashnode.space/default-guide/v1.0?t=1747764784847
