@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Music Player</h1>
+      <button id="toggle-theme">Toggle Theme</button>
+    </header>
+    <div class="container">
+      <!-- All Songs Section -->
+      <div class="all-songs">
+        <h2>All Songs</h2>
+        <input type="text" id="song-search" placeholder="Search songs" />
+        <label for="genre-filter">Filter by genre: </label>
+        <select id="genre-filter">
+          <option value="all">All</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="jazz">Jazz</option>
+        </select>
+        <div id="songs-list"></div>
+      </div>
+
+      <!-- Song Card Section -->
+      <div class="song-card">
+        <h2>Now Playing</h2>
+        <img id="song-image" src="" alt="Song Image" />
+        <h3 id="song-name">Song Name</h3>
+        <p id="artist-name">Artist Name</p>
+        <!-- Audio element with built-in controls -->
+        <audio id="audio-player" controls></audio>
+        <div>
+          <button id="prev-btn">Previous</button>
+          <button id="play-btn">Play/Pause</button>
+          <button id="stop-btn">Stop</button>
+          <button id="next-btn">Next</button>
+          <button id="add-to-playlist-btn">Add to Playlist</button>
+        </div>
+      </div>
+
+      <!-- Playlist Section -->
+      <div class="playlists">
+        <h2>Playlists</h2>
+        <input type="text" id="new-playlist-name" placeholder="New Playlist Name" />
+        <button id="create-playlist-btn">Create Playlist</button>
+        <br />
+        <input type="text" id="playlist-search" placeholder="Search playlists" />
+        <div id="playlist-list"></div>
+        <div id="playlist-songs"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
